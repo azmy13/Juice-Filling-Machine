@@ -1,0 +1,45 @@
+[project_definition]
+binary_path = "./a1"
+makefile_path = "."
+make_targets = ["all"]
+project_name = "a1"
+
+[[testcases]]
+name = "No Leftover Litres"
+description = "Perfect number of litres, no leftover litres."
+type = "OrdIO"
+io_file = "tests/01/io"
+io_prompt = "^\\s*>\\s*$"
+exp_exit_code = 0
+
+[[testcases]]
+name = "Normal Input"
+description = "Simple normal input."
+type = "OrdIO"
+io_file = "tests/02/io"
+io_prompt = "^\\s*>\\s*$"
+exp_exit_code = 0
+
+[[testcases]]
+name = "Invalid Litres"
+description = "That's not a value valid for the litre input."
+type = "OrdIO"
+io_file = "tests/03/io"
+io_prompt = "^\\s*>\\s*$"
+exp_exit_code = 0
+
+[[testcases]]
+name = "Too little"
+description = "That's not enough for one canister."
+type = "OrdIO"
+io_file = "tests/04/io"
+io_prompt = "^\\s*>\\s*$"
+exp_exit_code = 0
+
+[[testcases]]
+name = "Restart"
+description = "Normal Input but with a restart."
+type = "OrdIO"
+io_file = "tests/05/io"
+io_prompt = "^\\s*>\\s*$"
+exp_exit_code = 0
